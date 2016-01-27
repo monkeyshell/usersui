@@ -1,0 +1,90 @@
+
+		<!-- start: Header -->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="brand"><span><img src="images/logo.png" width="100"></span></a>
+								
+				<!-- start: Header Menu -->
+				<div class="nav-no-collapse header-nav">
+					<ul class="nav pull-right">
+						<!-- start: User Dropdown -->
+						<li class="dropdown">
+							<a class="btn dropdown-toggle" data-bind="click: userDropdown" data-toggle="dropdown" href="#">
+								<i class="halflings-icon white user"></i> 
+								<span data-bind="text: username"></span>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu" id="userDropdown">
+								<li><a href="#"><i class="halflings-icon off"></i> Logout</a></li>
+							</ul>
+						</li>
+						<!-- end: User Dropdown -->
+					</ul>
+				</div>
+				<!-- end: Header Menu -->
+				
+			</div>
+		</div>
+	</div>
+	<!-- start: Header -->
+	
+		<div class="container-fluid-full">
+		<div class="row-fluid">
+				
+			<!-- start: Main Menu -->
+			<div id="sidebar-left" class="span2">
+				<div class="nav-collapse sidebar-nav">
+					<ul class="nav nav-tabs nav-stacked main-menu">
+						<li style="background: #026c82; width: 200px; cursor:text;"><a><i class="icon-bar-chart"></i><span class="hidden-tablet"> Create User</span></a></li>
+						<li><a href="#" data-bind="click: users"><i class="icon-align-justify"></i><span class="hidden-tablet"> Users</span></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- end: Main Menu -->
+			
+			
+			<!-- start: Content -->
+    	<div id="content" class="span10">
+			
+			
+			<ul class="breadcrumb">
+				<li>
+					<i class="icon-home"></i>
+					<a>Home</a> 
+					<i class="icon-angle-right"></i>
+					<a>Create User</a> 
+				</li>
+			</ul>
+
+			<div class="profile">
+      			<section>
+        			<form>
+          				<ul>
+            				<li><span class="profile-form span2" style="font-weight:bold">First Name: </span><input class="profile-form span10" data-bind="value: firstName" readonly="true"></li>
+            				<li><span class="profile-form span2" style="font-weight:bold">Last Name: </span><input class="profile-form span10" data-bind="value: lastName" readonly="true"></li>
+            				<li><span class="profile-form span2" style="font-weight:bold">Email: </span><input class="profile-form span10" data-bind="value: email"></li>
+            				<li><span class="profile-form span2" style="font-weight:bold">Phone Number: </span><input class="profile-form span10" data-bind="value: phoneNumber"></li>
+            				<li><span class="profile-form span2" style="font-weight:bold">Alternate Phone Number: </span><input class="profile-form span10" data-bind="value: alternatePhoneNumber"></li>
+    		  				<li><span class="profile-form span2" style="font-weight:bold">Address: </span><input class="profile-form span10" data-bind="value: address"></li>
+    		  				<li><span class="profile-form span2" style="font-weight:bold">State: </span><input class="profile-form span10" data-bind="value: state" readonly="true"></li>
+    		  				<li><span class="profile-form span2" style="font-weight:bold">City: </span><input class="profile-form span10" data-bind="value: city" readonly="true"></li>
+    		  				<li><span class="profile-form span2" style="font-weight:bold">Street: </span><input class="profile-form span10" data-bind="value: street" readonly="true"></li>
+    		  				<li><input class="profile-form" type="submit" data-bind="click: createUser" value="Submit"></li>
+                            <li><a class="notify profile-form"></a></li>
+          				</ul>
+        			</form>
+      			</section>
+			</div>
+
+  	</div>
+	<!-- end: Content -->
+  
+  
+		</div>
+		</div><!--/fluid-row-->
+
+	
+
+	
+	

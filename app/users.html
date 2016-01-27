@@ -1,0 +1,67 @@
+<div class="navbar">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="brand"><span><img src="images/logo.png" width="100"></span></a>
+                                
+                <!-- start: Header Menu -->
+                <div class="nav-no-collapse header-nav">
+                    <ul class="nav pull-right">
+                        <!-- start: User Dropdown -->
+                        <li class="dropdown">
+                            <a class="btn dropdown-toggle" data-bind="click: userDropdown" data-toggle="dropdown" href="#">
+                                <i class="halflings-icon white user"></i> 
+                                <span data-bind="text: username"></span>
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" id="userDropdown">
+                                <li><a href="#"><i class="halflings-icon off"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                        <!-- end: User Dropdown -->
+                    </ul>
+                </div>
+                <!-- end: Header Menu -->
+                
+            </div>
+        </div>
+</div>
+<div class="container-fluid-full">
+  <div class="row-fluid">
+    <div id="sidebar-left" class="span2">
+                <div class="nav-collapse sidebar-nav">
+                    <ul class="nav nav-tabs nav-stacked main-menu">
+                        <li><a href="#" data-bind="click: form"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Create User</span></a></li>   
+                        <li style="background: #026c82; width: 200px; cursor:text;"><a><i class="icon-align-justify"></i><span class="hidden-tablet"> Users</span></a></li>
+                    </ul>
+                </div>
+    </div>
+    <div id="content" class="span10">
+     <ul class="breadcrumb">
+                <li>
+                    <i class="icon-home"></i>
+                    <a>Home</a> 
+                    <i class="icon-angle-right"></i>
+                    <a>Users</a> 
+                </li>
+     </ul>
+     <div class="row-fluid">
+        <table class="table" id="users">
+            <thead>
+                <tr>
+                    <th>Fisrt Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Alternate Phone Number</th>
+                    <th>State</th>
+                    <th>City</th>
+                    <th>Street</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach:displayList"><tr><td><span data-bind="text:firstName"></span></td><td><span data-bind="text:lastName"></span></td><td><span data-bind="text:email"></span></td><td><span data-bind="text:phoneNumber"></span></td><td><span data-bind="text:alternatePhoneNumber"></span></td><td><span data-bind="text:state"></span></td><td><span data-bind="text:city"></span></td><td><span data-bind="text:street"></span></td><td><span data-bind="text:address"></span></td></tr></tbody>
+        </table>
+      </div>
+    </div>
+   </div>
+</div>
